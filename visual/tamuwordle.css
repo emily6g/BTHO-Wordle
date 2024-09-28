@@ -33,9 +33,11 @@ main {
   }
   
   .filled-box {
-    border: 7px solid black;
+    border: 25px solid #d9d9d9;
   }
   
   .letter-row {
+    font-size: 15px;
+    color: black;
     display: flex;
   }
