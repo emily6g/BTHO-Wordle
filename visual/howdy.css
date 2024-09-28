@@ -3,7 +3,7 @@
 }
 
 #title {
-    font-size: 40px;
+    font-size: 40px;  /* originally at 40px*/
 }
 
 main {
@@ -11,3 +11,4 @@ main {
     display: grid;
     place-items: center;
 }
+
