@@ -1,8 +1,18 @@
-#tamuTitle {
+#main-card {
+    border: 1px solid lightgray;
+}
+
+#title {
     font-size: 50px;
     color: white;
-    margin-top: 5vh;
 }
+
+main {
+    min-height: 20vh;
+    display: grid;
+    place-items: center;
+}
+
 
 main {
     min-height: 100vh;
@@ -11,17 +21,16 @@ main {
     place-items: center;
 }
 
-#gameboard {
-    min-height: 80vh;
+#game-board {
     display: flex;
-    align-items: center;
+    margin-bottom: 25px;
     flex-direction: column;
   }
   
   .letter-box {
-    border: 25px solid #d9d9d9;
-    border-radius: 6px;
-    margin: 3px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    margin: 2px;
     font-size: 2.5rem;
     font-weight: 700;
     height: 3rem;
@@ -33,7 +42,7 @@ main {
   }
   
   .filled-box {
-    border: 7px solid black;
+    border: 2px solid black;
   }
   
   .letter-row {

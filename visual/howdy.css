@@ -3,7 +3,15 @@
 }
 
 #title {
-    font-size: 40px;
+    font-size: 100px; 
+    color:white /* originally at 40px*/
+}
+
+#to-page {
+    font-size: 50px;
+    color: white;
+    border-width :4px; border-style:solid;border-color:white;padding: 10px;
+
 }
 
 main {
@@ -11,3 +19,4 @@ main {
     display: grid;
     place-items: center;
 }
+
