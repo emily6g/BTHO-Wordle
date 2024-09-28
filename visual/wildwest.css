@@ -1,0 +1,14 @@
+#main-card {
+    border: 1px solid lightgray;
+}
+
+#title {
+    font-size: 50px;
+    color: white;
+}
+
+main {
+    min-height: 20vh;
+    display: grid;
+    place-items: center;
+}
