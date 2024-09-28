@@ -2,9 +2,5 @@
 
 # hello guys
 
-<<<<<<< Updated upstream
-# hiiii
-=======
-#can you see my comment?
+# can yall see this? - Arpita 
 
->>>>>>> Stashed changes
