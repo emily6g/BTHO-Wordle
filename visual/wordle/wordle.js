@@ -1,9 +1,15 @@
+words = [
+    "Whoop", "Howdy", "Gigem", "Corps", "Aggie", "Spirit", "Honor", "Study", "Yells", 
+    "Pride", "Loyal", "Games", "Evans", "Annex", "Sbisa", "Unity", "Class", "Panda", 
+    "Trust", "Texas", "Cadet", "Fight", "Finals", "Alumn"
+]
+
 const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
-//let rightGuessString = WORDS[Math.floor(Math.random() * WORDS.length)]
-//console.log(rightGuessString)
+let guessWord = words[Math.floor(Math.random() * words.length)]
+console.log(guessWord)
 
 function initBoard() {
     let board = document.getElementById("gameboard");
@@ -66,4 +72,19 @@ function deleteLetter(){
     box.classList.remove("filled-box")
     currentGuess.pop()
     nextLetter -=1
+}
+
+function checkGuess(){
+    let row = document.getElementsByClassName("letter-row")[6-guessesRemaining]
+    let guessStr = ''
+    let rightGuess = Array.from(guessWord)
+    for(const val of currentGuess){
+        guessStr += val
+    }
+
+    if (guessStr.length != 5){
+        return
+    }
+
+    
 }
