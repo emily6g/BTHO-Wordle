@@ -2,13 +2,15 @@
     border: 1px solid lightgray;
 }
 
-#title {
+#tamuTitle {
     font-size: 50px;
     color: white;
+    margin-top: -10vh;
 }
 
 main {
-    min-height: 40vh;
+    min-height: 100vh;
+    background-color: #620808;
     display: grid;
     place-items: center;
 }
@@ -20,7 +22,7 @@ main {
   }
   
   .letter-box {
-    border: 2px solid gray;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 3px;
     margin: 2px;
     font-size: 2.5rem;
