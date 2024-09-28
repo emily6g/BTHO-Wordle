@@ -1,0 +1,43 @@
+#tamuTitle {
+    font-size: 50px;
+    color: white;
+    margin-top: 5vh;
+}
+
+main {
+    min-height: 100vh;
+    background-color: #620808;
+    display: grid;
+    place-items: center;
+}
+
+#gameboard {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .letter-box {
+    border: 25px solid #d9d9d9;
+    border-radius: 6px;
+    margin: 3px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  
+  .filled-box {
+    border: 25px solid #d9d9d9;
+  }
+  
+  .letter-row {
+    font-size: 15px;
+    color: black;
+    display: flex;
+  }

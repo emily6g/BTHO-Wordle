@@ -1,7 +1,7 @@
 #to-page {
     border: 1px solid lightgray;
     font-size: 30px;
-   
+    color:white
 }
 
 
@@ -10,9 +10,11 @@ body {
     display: grid;
     place-items: center;
     font-size: 30px;
+    color:white
 }
 
 #title_category {
     margin-right: 40px;
     margin-left: 40px;
+    color:white
 }
