@@ -82,3 +82,7 @@ function deleteLetter(){
     currentGuess.pop()
     nextLetter -=1
 }
+
+function checkGuess(){
+    
+}
