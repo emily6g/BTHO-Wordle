@@ -119,7 +119,7 @@ function checkGuess() {
 
 
     if (guessString === guessWord) {
-        alert("You guessed right! Game over!");
+        showCustomAlert();
         guessesRemaining = 0;
         return;
     } else {
@@ -129,8 +129,29 @@ function checkGuess() {
 
 
         if (guessesRemaining === 0) {
-            alert(`You've run out of guesses! The correct word was: "${guessWord}"`);
+            showCustomAlert2();
         }
     }
 }
+
+
+function showCustomAlert() {
+    var alertModal = document.getElementById("customAlert");
+    alertModal.style.display = "flex";
+  }
+
+function closeCustomAlert() {
+    var alertModal = document.getElementById("customAlert");
+    alertModal.style.display = "none";
+  }
+
+  function showCustomAlert2() {
+    var alertModal = document.getElementById("customAlert2");
+    alertModal.style.display = "flex";
+  }
+
+function closeCustomAlert2() {
+    var alertModal = document.getElementById("customAlert2");
+    alertModal.style.display = "none";
+  }
 

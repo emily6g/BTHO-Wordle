@@ -1,5 +1,5 @@
 const words = [
-    "Whoop", "Howdy", "Gigem", "Corps", "Aggie", "Honor", "Study", "Yells",
+    "Whoop", "Howdy", "Gigem", "Corps", "Aggie", "Spirit", "Honor", "Study", "Yells",
     "Pride", "Loyal", "Games", "Evans", "Annex", "Sbisa", "Unity", "Class", "Panda",
     "Trust", "Texas", "Cadet", "Fight", "Final", "Alumn"
 ];
@@ -122,7 +122,7 @@ function checkGuess() {
         // alert("You BTHO WORDLE!! Congrats!");
         showCustomAlert();
         
-        closeCustomAlert();
+        //closeCustomAlert();
         guessesRemaining = 0;
         return;
     } else {
@@ -132,7 +132,9 @@ function checkGuess() {
 
 
         if (guessesRemaining === 0) {
-            alert(`You've run out of guesses! The correct word was: "${guessWord}" CLICK: GO BACK to play again`);
+            //alert(`You've run out of guesses! The correct word was: "${guessWord}" CLICK: GO BACK to play again`);
+            showCustomAlert2();
+            
         }
     }
 
@@ -145,5 +147,15 @@ function showCustomAlert() {
 
 function closeCustomAlert() {
     var alertModal = document.getElementById("customAlert");
+    alertModal.style.display = "none";
+  }
+
+  function showCustomAlert2() {
+    var alertModal = document.getElementById("customAlert2");
+    alertModal.style.display = "flex";
+  }
+
+function closeCustomAlert2() {
+    var alertModal = document.getElementById("customAlert2");
     alertModal.style.display = "none";
   }

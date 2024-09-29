@@ -1,23 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<head>
-    <title>A&M Classic</title>
-</head>
-
+    
     <title>A&M Wordle</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="majors.css">
-
+    <style>
+        body {
+            background-image: url('path/to/your/image.jpg'); /* Replace with your image path */
+            background-size: 50%; /* Makes the background cover the entire viewport */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: 400; /* Centers the image */
+            background-attachment: fixed; /* Keeps the background fixed when scrolling */
+            height: 50vh; /* Full viewport height */
+            margin: 0; /* Remove default body margin */
+        }
+        main {
+            text-align: center; /* Center the text in the main section */
+            color: white; /* Optional: change text color to be visible on dark background */
+            padding: 20px; /* Optional: add padding around the main content */
+            background-color: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background for readability */
+            border-radius: 10px; /* Optional: rounded corners for the background */
+        }
+    </style>
+</head>
 <body>
     <main>
         <h1 id="tamuTitle">Majors</h1>
-        <div id = 'gameboard'></div>
+        <div id='gameboard'></div>
         <a id="to-page" href="/visual/categories/categories.html">GO BACK</a>
     </main>
-</body>
     <script src="majors.js"></script>
+</body>
 </html>

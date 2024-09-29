@@ -76,11 +76,11 @@ main {
 }
 
 #to-page {
-
-  border: 1px solid lightgray;
   padding: 12px;
   font-size: 30px;
-  color:white
+  color: #620808;
+  border-width:4px;background-color:white;padding-right:18px;padding-left:18px;
+  margin-top: -200px;
 }
 
 

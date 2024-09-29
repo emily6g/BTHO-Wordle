@@ -79,6 +79,11 @@ main {
   color:white
 }
 
+body {
+  background-color: #620808;
+  overflow: hidden; /* Prevent scrollbars during confetti */
+}
+
 img {
   max-width: 50%;
   height: auto;
