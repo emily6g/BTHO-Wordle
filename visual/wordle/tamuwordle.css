@@ -78,3 +78,8 @@ main {
   font-size: 30px;
   color:white
 }
+
+img {
+  max-width: 50%;
+  height: auto;
+}
