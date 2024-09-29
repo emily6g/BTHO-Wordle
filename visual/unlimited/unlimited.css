@@ -1,5 +1,5 @@
 #tamuTitle {
-  /* text-shadow: 0 0 12px #000000; */
+  
   font-size: 50px;
   color: rgb(255, 255, 255);
   margin-top: 5vh;
@@ -21,7 +21,7 @@ main {
 }
 
 .letter-box {
-  /* border: 3px solid #000000; */
+  
   background-color: #d9d9d9; 
   border-radius: 6px;
   margin: 3px;
@@ -33,12 +33,12 @@ main {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  transition: background-color 0.3s, border 0.3s; /* Smooth transition for colors */
+  transition: background-color 0.3s, border 0.3s; 
 }
 
 
 .filled-box {
-  border: 5px solid #d9d9d9; /* Adjusted to match letter-box border size */
+  border: 5px solid #d9d9d9; 
 }
 
 
@@ -46,26 +46,26 @@ main {
   font-size: 15px;
   color: black;
   display: flex;
-  justify-content: center; /* Center the letters in the row */
-  margin-bottom: 10px; /* Space between rows */
+  justify-content: center; 
+  margin-bottom: 10px; 
 }
 
 
-/* Green for correct letters in the right position */
+
 .green {
   background-color: green;
   color: white;
 }
 
 
-/* Yellow for correct letters in the wrong position */
+
 .yellow {
   background-color: yellow;
   color: black;
 }
 
 
-/* Grey for incorrect letters */
+
 .grey {
   background-color: grey;
   color: white;
@@ -98,7 +98,7 @@ img {
   align-items: center;
 }
 
-/* Modal content box */
+
 .alert-content {
   background-color: #fff;
   padding: 20px;
