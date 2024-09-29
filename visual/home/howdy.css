@@ -3,7 +3,8 @@
 }
 
 #title {
-    font-size: 100px; 
+    font-family: "Georgia", serif;
+    font-size: 110px; 
     color:white /* originally at 40px*/
 }
 
