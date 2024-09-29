@@ -3,6 +3,7 @@ const words = [ "Boots", "Horse","Howdy","Texas","Ranch","Lasso","Rodeo","Trail"
 ];
 
 var audio = document.getElementById("myAudio");
+var audio2 = document.getElementById("myAudio2");
 
 const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
@@ -181,6 +182,8 @@ function closeCustomAlert() {
 function closeCustomAlert2() {
     var alertModal = document.getElementById("customAlert2");
     alertModal.style.display = "none";
+
+    audio2.play();
 
     var scalar = 2;
     var unicorn = confetti.shapeFromText({ text: '🐍', scalar });
