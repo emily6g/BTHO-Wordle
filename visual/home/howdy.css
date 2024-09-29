@@ -4,18 +4,18 @@
 
 #title {
     font-family: "Georgia", serif;
-    font-size: 110px; 
+    font-size: 140px; 
     color:white /* originally at 40px*/
 }
 
 #to-page {
     font-size: 50px;
-    color: white;
-    border-width :4px; border-style:solid;border-color:white;padding: 10px;
-
+    color: #620808;
+    border-width :4px;background-color:white;padding-right:85px;padding-left:85px;padding-top:8px;padding-bottom:8px;
 }
 
 main {
+    padding-top: 120px;
     min-height: 100vh;
     display: grid;
     place-items: center;
