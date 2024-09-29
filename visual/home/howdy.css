@@ -33,10 +33,11 @@ main {
 }
 
 #para {
-    place-items: center;
-    margin-right: 40px;
-    margin-left: 40px;
-    font-size: 20px;
+    place-items: absolute;
+    left: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 25px;
     color:white
 }
 img {
