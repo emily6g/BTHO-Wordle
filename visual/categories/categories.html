@@ -1,33 +1,74 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New to-page</title>
     <link rel="stylesheet" href="categories.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            padding: 20px;      /* Padding around the body */
+        }
+        .category-container {
+            display: flex;          /* Use flexbox for layout */
+            justify-content: space-between; /* Space boxes evenly across the page */
+            width: 100%;           /* Full width of the container */
+            max-width: 1200px;     /* Max width for layout */
+            margin-top: 20px;      /* Space above the boxes */
+        }
+        .category-box {
+            background-color: black; /* Black background */
+            padding: 40px;           /* Increased padding inside the box */
+            color: white;            /* White text color */
+            text-align: center;      /* Center the text */
+            flex: 1;                 /* Allow boxes to grow equally */
+            margin: 0 15px;         /* Margin between boxes */
+            min-width: 180px;       /* Minimum width for each box */
+            min-height: 150px;      /* Minimum height for each box */
+            font-size: 36px;        /* Increased font size for category titles */
+            display: flex;          /* Use flexbox for alignment */
+            flex-direction: column; /* Stack items vertically */
+            justify-content: space-between; /* Space items out */
+        }
+        .play-button {
+            margin-top: auto;        /* Push button to the bottom */
+            color: white;           /* Button text color */
+            text-decoration: none;   /* Remove underline from links */
+            padding: 10px 20px;     /* Padding for buttons */
+            background-color: #620808; /* Background color for buttons */
+            border-radius: 5px;     /* Rounded corners */
+            font-size: 18px;         /* Font size for button text */
+            text-align: center;      /* Center the button text */
+        }
+    </style>
 </head>
 <body style="background-color:#620808;">
-    <p style="font-size: 100px; color: white;margin-top: -100px;">Pick a Category!!</p> <!-- Change font size here -->
+    <p style="font-size: 100px; color: white; margin-top: -10px;">Pick a Category!!</p>
     
+    <div class="category-container">
+        <div class="category-box">
+            Tamu Unlimited!
+            <a class="play-button" href="/visual/unlimited/tamuunlimited.html">PLAY</a>
+        </div>
+        <div class="category-box">
+            Tamu Wordle!
+            <a class="play-button" href="/visual/wordle/tamuwordle.html">PLAY</a>
+        </div>
+        <div class="category-box">
+            Wild West!
+            <a class="play-button" href="/visual/wildwest/wildwest.html">PLAY</a>
+        </div>
+        <div class="category-box">
+            Majors!
+            <a class="play-button" href="/visual/majors/majors.html">PLAY</a>
+        </div>
+    </div>
+
     <footer class="card-footer">
-        <p>
-            <a id="to-page" href="/visual/unlimited/tamuunlimited.html" style="margin-left: 35px;">PLAY</a>
-            <a id="to-page" href="/visual/wordle/tamuwordle.html" style="margin-left: 200px; margin-right: 170px;">PLAY</a>
-            <a id="to-page" href="/visual/wildwest/wildwest.html" style="margin-right: 200px;">PLAY</a>
-            <a id="to-page" href="/visual/majors/majors.html" style="margin-right: 35px;">PLAY</a>
-        </p>
-        
-        <span id="title_category"> 
-            tamu unlimited
-        </span>   
-        <span id="title_category;"> 
-            tamu wordle
-        </span>   
-        <span id="title_category"> 
-            wild west
-        </span>   
-        <span id="title_category" style="margin-left: 150px;"> 
-            majors
-        </span>   
+        <p></p> <!-- Empty paragraph to maintain structure -->
     </footer>
 </body>
 </html>
