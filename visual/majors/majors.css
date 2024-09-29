@@ -32,12 +32,12 @@ main {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  transition: background-color 0.3s, border 0.3s; /* Smooth transition for colors */
+  transition: background-color 0.3s, border 0.3s; 
 }
 
 
 .filled-box {
-  border: 5px solid #d9d9d9; /* Adjusted to match letter-box border size */
+  border: 5px solid #d9d9d9; 
 }
 
 
@@ -45,8 +45,8 @@ main {
 font-size: 15px;
 color: black;
 display: flex;
-justify-content: center; /* Center the letters in the row */
-margin-bottom: 10px; /* Space between rows */
+justify-content: center; 
+margin-bottom: 10px; 
 }
 
 .green {

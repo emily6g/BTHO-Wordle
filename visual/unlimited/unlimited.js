@@ -162,5 +162,5 @@ function closeCustomAlert2() {
     var alertModal = document.getElementById("customAlert2");
     alertModal.style.display = "none";
   }
-
+  
   
