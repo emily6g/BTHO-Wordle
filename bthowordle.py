@@ -1,5 +1,3 @@
-
-
 import random
 
 # Greets user, explains the rules
