@@ -35,8 +35,8 @@ main {
 #para {
     place-items: absolute;
     left: 200px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
     font-size: 25px;
     color:white
 }
