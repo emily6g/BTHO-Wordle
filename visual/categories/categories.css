@@ -21,11 +21,12 @@ body {
 
 
 #to-main {
-
+    background-image: url("zebra.png");
     border: 1px solid lightgray;
     padding: 12px;
     font-size: 30px;
     color:white
+    
   }
 
   #to-page2 {
