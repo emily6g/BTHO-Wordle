@@ -1,8 +1,8 @@
 #tamuTitle {
   font-size: 50px;
   color: white;
-  margin-top: 5vh;
   font-family: "Stencil Std", "fantasy"; 
+  margin-top: 5vh;
 }
 
 
@@ -16,6 +16,7 @@ main {
 
 
 #gameboard {
+  min-height: 80vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -35,12 +36,12 @@ main {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  transition: background-color 0.3s, border 0.3s; /* Smooth transition for colors */
+  transition: background-color 0.3s, border 0.3s;
 }
 
 
 .filled-box {
-  border: 5px solid #d9d9d9; /* Adjusted to match letter-box border size */
+  border: 5px solid #d9d9d9; 
 }
 
 
@@ -48,26 +49,23 @@ main {
   font-size: 15px;
   color: black;
   display: flex;
-  justify-content: center; /* Center the letters in the row */
-  margin-bottom: 10px; /* Space between rows */
+  justify-content: center; 
+  margin-bottom: 10px; 
 }
 
 
-/* Green for correct letters in the right position */
 .green {
   background-color: green;
   color: white;
 }
 
 
-/* Yellow for correct letters in the wrong position */
 .yellow {
   background-color: yellow;
   color: black;
 }
 
 
-/* Grey for incorrect letters */
 .grey {
   background-color: grey;
   color: white;
@@ -77,12 +75,12 @@ main {
   font-size: 30px;
   color: #620808;
   border-width:4px;background-color:white;padding-right:18px;padding-left:18px;
-  margin-top: -50px;
+  margin-top: -120px;
 }
 
 body {
   background-color: #620808;
-  overflow: hidden; /* Prevent scrollbars during confetti */
+  overflow: hidden;
 }
 
 img {
@@ -104,7 +102,6 @@ img {
   align-items: center;
 }
 
-/* Modal content box */
 .alert-content {
   background-color: #fff;
   padding: 20px;
