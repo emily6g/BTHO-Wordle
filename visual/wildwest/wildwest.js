@@ -1,4 +1,4 @@
-const words = [ "Boots", "Horse","Howdy","Texas","Ranch","Lasso","Rodeo","Trail","Spurs","Cacti","Field","Barns","Farms","Wagon","Dusty","Shoot","Ropes","Sheep","Goats", "Burro","Rusty","Denim", "Sling","Wrang","Bison","Mules"
+const words = [ "Boots", "Horse","Howdy","Texas","Ranch","Lasso","Rodeo","Trail","Spurs","Cacti","Field","Barns","Farms","Wagon","Dusty","Shoot","Ropes","Sheep","Goats", "Burro","Rusty","Denim", "Sling","Wrang","Bison","Mules", "Badge","Fence"
     
 ];
 
