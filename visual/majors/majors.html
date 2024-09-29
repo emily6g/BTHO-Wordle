@@ -11,20 +11,20 @@
     <a href="https://careercenter.tamu.edu/current-students/explore-majors-and-careers/majors#:~:text=Whether%20you%20want%20to%20explore%20the%20stars">Visit The Website to see the list of Majors!!</a>
     <style>
         body {
-            background-image: url('path/to/your/image.jpg'); /* Replace with your image path */
-            background-size: 50%; /* Makes the background cover the entire viewport */
-            background-repeat: no-repeat; /* Prevents the image from repeating */
-            background-position: 400; /* Centers the image */
-            background-attachment: fixed; /* Keeps the background fixed when scrolling */
-            height: 50vh; /* Full viewport height */
-            margin: 0; /* Remove default body margin */
+            background-image: url('path/to/your/image.jpg'); 
+            background-size: 50%; 
+            background-repeat: no-repeat; 
+            background-position: 400; 
+            background-attachment: fixed; 
+            height: 50vh; 
+            margin: 0; 
         }
         main {
-            text-align: center; /* Center the text in the main section */
-            color: white; /* Optional: change text color to be visible on dark background */
-            padding: 20px; /* Optional: add padding around the main content */
-            background-color: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background for readability */
-            border-radius: 10px; /* Optional: rounded corners for the background */
+            text-align: center; 
+            color: white; 
+            padding: 20px; 
+            background-color: rgba(0, 0, 0, 0.5); 
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -35,5 +35,24 @@
         <a id="to-page" href="/visual/categories/categories.html">GO BACK</a>
     </main>
     <script src="majors.js"></script>
+    
+    <div id="customAlert" class="alert-modal" style="display: none;">
+        <div class="alert-content">
+          <h2>GIG EM</h2>
+          <p>YOU WONNNNNNN</p>
+          <img src="reveille.jpg" alt="GIG EM" width="300">
+          <button onclick="closeCustomAlert()">OK</button>
+        </div>
+      </div>
+
+    <div id="customAlert2" class="alert-modal" style="display: none;">
+        <div class="alert-content">
+            <h2>SSSSSSSSS</h2>
+            <p>YOU LOSTTTTTTT</p>
+            <img src="snake.jpg" alt="SSSSSSSSSSS" width="300">
+            <button onclick="closeCustomAlert2()">OK</button>
+        </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </body>
 </html>

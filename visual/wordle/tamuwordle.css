@@ -6,6 +6,7 @@
 
 
 main {
+  background-image: url("wave.png");
   min-height: 100vh;
   background-color: #620808;
   display: grid;

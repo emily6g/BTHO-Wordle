@@ -32,12 +32,12 @@ main {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  transition: background-color 0.3s, border 0.3s; /* Smooth transition for colors */
+  transition: background-color 0.3s, border 0.3s; 
 }
 
 
 .filled-box {
-  border: 5px solid #d9d9d9; /* Adjusted to match letter-box border size */
+  border: 5px solid #d9d9d9; 
 }
 
 
@@ -45,8 +45,8 @@ main {
 font-size: 15px;
 color: black;
 display: flex;
-justify-content: center; /* Center the letters in the row */
-margin-bottom: 10px; /* Space between rows */
+justify-content: center; 
+margin-bottom: 10px; 
 }
 
 .green {
@@ -71,4 +71,39 @@ color: white;
   color: #620808;
   border-width:4px;background-color:white;padding-right:18px;padding-left:18px;
   margin-top: -200px;
+}
+
+
+
+img {
+  max-width: 50%;
+  height: auto;
+}
+
+.alert-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content box */
+.alert-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.alert-content img {
+  margin: 20px 0;
 }
