@@ -1,7 +1,7 @@
 const words = [
     "Whoop", "Howdy", "Gigem", "Corps", "Aggie", "Spirit", "Honor", "Study", "Yells",
     "Pride", "Loyal", "Games", "Evans", "Annex", "Sbisa", "Unity", "Class", "Panda",
-    "Trust", "Texas", "Cadet", "Fight", "Final", "Alumn"
+    "Trust", "Texas", "Cadet", "Fight", "Final", "Alumn", "Dorms", "Rings"
 ];
 
 
