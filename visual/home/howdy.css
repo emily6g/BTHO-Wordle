@@ -14,6 +14,12 @@
     border-width :4px;background-color:white;padding-right:85px;padding-left:85px;padding-top:8px;padding-bottom:8px;
 }
 
+#to-intro {
+    font-size: 50px;
+    color: white;
+    border-width :4px; border-style:solid;border-color:white;padding: 10px;
+}
+
 main {
     padding-top: 120px;
     min-height: 100vh;
