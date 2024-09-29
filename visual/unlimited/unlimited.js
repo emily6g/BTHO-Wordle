@@ -4,7 +4,7 @@ words = [
     "Rudder", "RingDance", "ElephantWalk", "CollegeStation", "Msc", "Commons", "Duncan", 
     "SpiritBus", "Reed", "Recreation", "Football", "TU", "Tamu", "TicketPull", "AggieRing", 
     "Mays", "RingDunk", "Graduation", "Band", "YellLeaders", "Maroon", "CaboGrill", 
-    "HoustonSubs", "SmoothieKing", "ETAM", "Caneck", "DiningHall", "KyleField", "BTHO"
+    "HoustonSubs", "SmoothieKing", "Canvas","ETAM", "Caneck", "DiningHall", "KyleField", "BTHO"
 ]
 
 const NUMBER_OF_GUESSES = 6;
