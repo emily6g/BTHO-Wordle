@@ -21,12 +21,11 @@ body {
 
 
 #to-main {
-    background-image: url("stripe.jpg");
-    border: 1px solid lightgray;
-    padding: 12px;
+    background-image: url("stripe.png");
     font-size: 30px;
-    color:white
-    
+    color: #620808;
+    border-width:4px;background-color:white;padding-right:18px;padding-left:18px;
+    margin-top: -200px; 
   }
 
   #to-page2 {
