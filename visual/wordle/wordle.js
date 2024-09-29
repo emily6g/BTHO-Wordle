@@ -39,7 +39,7 @@ document.addEventListener('keyup', (e)=>{
     }
     
     if (pressedKey === "Enter") {
-        check2()
+        checkGuess()
         return
     }
     
