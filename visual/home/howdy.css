@@ -11,13 +11,13 @@
 #to-page {
     font-size: 50px;
     color: #620808;
-    border-width :4px;background-color:white;padding-right:85px;padding-left:85px;padding-top:8px;padding-bottom:8px;
+    border-width :4px;background-color:white;padding-right:130px;padding-left:130px;padding-top:8px;padding-bottom:8px;
 }
 
 #to-intro {
     font-size: 50px;
-    color: white;
-    border-width :4px; border-style:solid;border-color:white;padding: 10px;
+    color: #620808;
+    border-width :4px; background-color:white;padding: 10px; padding-left: 15px; padding-right: 15px;
 }
 
 main {
@@ -27,3 +27,9 @@ main {
     place-items: center;
 }
 
+img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  
