@@ -9,6 +9,7 @@ main {
   min-height: 100vh;
   /*background-color: #620808;*/
   background-image: url("BTHO_WO.jpg");
+  
 
   display: grid;
   place-items: center;
@@ -81,4 +82,6 @@ main {
   font-size: 30px;
   color:white
 }
+
+
 
