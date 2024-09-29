@@ -127,6 +127,7 @@ function checkGuess() {
 
 
         if (guessesRemaining === 0) {
+            alert(`The correct word was: "${guessWord}"`);
             showCustomAlert2();
         }
     }
