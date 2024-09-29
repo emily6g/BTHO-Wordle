@@ -228,5 +228,5 @@ function closeCustomAlert2() {
     setTimeout(shoot, 100);
     setTimeout(shoot, 200);
   }
-
+  
   
