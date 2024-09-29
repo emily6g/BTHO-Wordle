@@ -121,6 +121,7 @@ function checkGuess() {
     if (guessString === guessWord) {
         showCustomAlert();
         guessesRemaining = 0;
+        
         return;
     } else {
         guessesRemaining -= 1;
@@ -143,6 +144,13 @@ function showCustomAlert() {
 function closeCustomAlert() {
     var alertModal = document.getElementById("customAlert");
     alertModal.style.display = "none";
+
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+
   }
 
   function showCustomAlert2() {
@@ -155,3 +163,4 @@ function closeCustomAlert2() {
     alertModal.style.display = "none";
   }
 
+  
