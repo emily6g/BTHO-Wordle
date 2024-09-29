@@ -13,6 +13,8 @@ words = [
     "URPN", "VIBS", "VIST", "VSCS", "WGST", "ZOOL"
 ]
 
+var audio = document.getElementById("myAudio");
+
 const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
@@ -142,6 +144,8 @@ function showCustomAlert() {
 function closeCustomAlert() {
     var alertModal = document.getElementById("customAlert");
     alertModal.style.display = "none";
+
+    audio.play();
 
     var end = Date.now() + (15 * 1000);
 

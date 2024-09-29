@@ -4,6 +4,7 @@ const words = [
     "Trust", "Texas", "Cadet", "Fight", "Final", "Alumn", "Dorms", "Rings"
 ];
 
+var audio = document.getElementById("myAudio");
 
 const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
@@ -147,6 +148,8 @@ function showCustomAlert() {
 function closeCustomAlert() {
     var alertModal = document.getElementById("customAlert");
     alertModal.style.display = "none";
+
+    audio.play();
 
     var end = Date.now() + (15 * 1000);
 

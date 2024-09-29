@@ -7,6 +7,8 @@ words = [
     "HoustonSubs", "SmoothieKing", "Canvas","ETAM", "Caneck", "DiningHall", "KyleField", "BTHO", "Kyle"
 ]
 
+var audio = document.getElementById("myAudio");
+
 const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
@@ -145,6 +147,8 @@ function showCustomAlert() {
 function closeCustomAlert() {
     var alertModal = document.getElementById("customAlert");
     alertModal.style.display = "none";
+
+    audio.play();
 
     var count = 200;
     var defaults = {
