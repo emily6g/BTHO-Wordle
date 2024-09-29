@@ -22,7 +22,8 @@ main {
 
 
 .letter-box {
-  border: 5px solid #d9d9d9;
+  border: 3px solid #d9d9d9;
+  background-color: #d9d9d9; 
   border-radius: 6px;
   margin: 3px;
   font-size: 2.5rem;
