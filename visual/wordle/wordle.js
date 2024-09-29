@@ -119,7 +119,7 @@ function checkGuess() {
 
 
     if (guessString === guessWord) {
-        alert("You guessed right! Game over!");
+        alert("You BTHO WORDLE!! Congrats!");
         guessesRemaining = 0;
         return;
     } else {
@@ -129,9 +129,7 @@ function checkGuess() {
 
 
         if (guessesRemaining === 0) {
-            alert(`You've run out of guesses! The correct word was: "${guessWord}"`);
+            alert(`You've run out of guesses! The correct word was: "${guessWord} CLICK: GO BACK to play again"`);
         }
     }
 }
-
-

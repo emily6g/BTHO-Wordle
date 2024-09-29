@@ -72,4 +72,8 @@ main {
   color: white;
 }
 
-
+#to-page {
+  border: 1px solid lightgray;
+  font-size: 30px;
+  color:white
+}

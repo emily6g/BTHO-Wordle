@@ -1,4 +1,4 @@
-acronyms = [
+words = [
     "ACCT", "AERO", "AGLS", "AGSC", "ANSC", "ARCH", "ARSC", "ARTS", "ASTR", "BAEN", "BESC", "BICH", 
     "BIMS", "BIOL", "BMEN", "BUSN", "CARC", "CHEM", "CHEN", "CHIN", "CLEN", "COMM", "COSC", "CSCE", 
     "CVEN", "CYBR", "DAEN", "DCED", "DDHS", "ECCB", "ECDE", "ECEN", "ECMT", "ECON", "EHRD", "ENDG", 
@@ -17,72 +17,118 @@ const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
-//let rightGuessString = WORDS[Math.floor(Math.random() * WORDS.length)]
-//console.log(rightGuessString)
+let guessWord = words[Math.floor(Math.random() * words.length)].toLowerCase();
+console.log(guessWord);
+
 
 function initBoard() {
     let board = document.getElementById("gameboard");
     for (let i = 0; i < 6; i++) {
-        let row = document.createElement("div")
-        row.className = "letter-row"
+        let row = document.createElement("div");
+        row.className = "letter-row";
         for (let j = 0; j < 4; j++) {
-            let box = document.createElement("div")
-            box.className = "letter-box"
-            row.appendChild(box)
+            let box = document.createElement("div");
+            box.className = "letter-box";
+            row.appendChild(box);
         }
-        board.appendChild(row)
+        board.appendChild(row);
     }
 }
 
-initBoard()
+initBoard();
 
-document.addEventListener('keyup', (e)=>{
+document.addEventListener('keyup', (e) => {
     if (guessesRemaining === 0) {
-        return
+        return;
     }
-    
-    let pressedKey = String(e.key)
+
+    let pressedKey = String(e.key);
     if (pressedKey === "Backspace" && nextLetter !== 0) {
-        deleteLetter()
-        return
+        deleteLetter();
+        return;
     }
-    
+
     if (pressedKey === "Enter") {
-        checkGuess()
-        return
+        checkGuess();
+        return;
     }
-    
-    let found = pressedKey.match(/[a-z]/gi)
+
+    let found = pressedKey.match(/[a-z]/gi);
     if (!found || found.length > 1) {
-        return
+        return;
     } else {
-        insertLetter(pressedKey)
+        insertLetter(pressedKey);
     }
-})
+});
 
-function insertLetter (pressedKey) {
+function insertLetter(pressedKey) {
     if (nextLetter === 5) {
-      return
+        return;
     }
-    
-    pressedKey = pressedKey.toLowerCase()
-    let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining]
-    let box = row.children[nextLetter]
-    box.textContent = pressedKey
-    box.classList.add("filled-box")
-    currentGuess.push(pressedKey)
-    nextLetter += 1
+
+    pressedKey = pressedKey.toLowerCase();
+    let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining];
+    let box = row.children[nextLetter];
+    box.textContent = pressedKey;
+    box.classList.add("filled-box");
+    currentGuess.push(pressedKey);
+    nextLetter += 1;
 }
 
-function deleteLetter(){
-    let row = document.getElementsByClassName("letter-row")[6- guessesRemaining]
-    let box = row.children[nextLetter - 1]
-    box.textContent = ""
-    box.classList.remove("filled-box")
-    currentGuess.pop()
-    nextLetter -=1
+function deleteLetter() {
+    let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining];
+    let box = row.children[nextLetter - 1];
+    box.textContent = "";
+    box.classList.remove("filled-box");
+    currentGuess.pop();
+    nextLetter -= 1;
 }
+s
+function checkGuess() {
+    let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining];
+    let guessString = currentGuess.join('');
+    let rightGuess = Array.from(guessWord);
 
-function checkGuess(){
-    
+
+    if (guessString.length !== 4) {
+        alert("Not enough letters!");
+        return;
+    }
+
+
+    for (let i = 0; i < 4; i++) {
+        let box = row.children[i];
+        let letter = currentGuess[i];
+        let letterColor = '';
+
+
+        if (rightGuess[i] === letter) {
+            letterColor = 'green';
+        } else if (rightGuess.includes(letter)) {
+            letterColor = 'yellow';
+        } else {
+            letterColor = 'grey';
+        }
+
+
+        setTimeout(() => {
+            box.classList.add(letterColor);
+        }, 250 * i);
+    }
+
+
+    if (guessString === guessWord) {
+        alert("You guessed right! Game over!");
+        guessesRemaining = 0;
+        return;
+    } else {
+        guessesRemaining -= 1;
+        currentGuess = [];
+        nextLetter = 0;
+
+
+        if (guessesRemaining === 0) {
+            alert(`You've run out of guesses! The correct word was: "${guessWord}"`);
+        }
+    }
 }
