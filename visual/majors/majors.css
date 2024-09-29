@@ -62,3 +62,12 @@ color: black;
 background-color: grey;
 color: white;
 }  
+
+
+#to-page {
+
+  border: 1px solid lightgray;
+  padding: 12px;
+  font-size: 30px;
+  color:white
+}
