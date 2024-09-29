@@ -133,5 +133,3 @@ function checkGuess() {
         }
     }
 }
-
-

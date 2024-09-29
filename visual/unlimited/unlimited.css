@@ -1,43 +1,74 @@
 #tamuTitle {
-    font-size: 50px;
-    color: white;
-    margin-top: 5vh;
+  font-size: 50px;
+  color: white;
+  margin-top: 5vh;
 }
 
 main {
-    min-height: 100vh;
-    background-color: #620808;
-    display: grid;
-    place-items: center;
+  min-height: 100vh;
+  background-color: #620808;
+  display: grid;
+  place-items: center;
 }
 
 #gameboard {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .letter-box {
-    border: 25px solid #d9d9d9;
-    border-radius: 6px;
-    margin: 3px;
-    font-size: 2.5rem;
-    font-weight: 700;
-    height: 3rem;
-    width: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-  }
-  
-  .filled-box {
-    border: 25px solid #d9d9d9;
-  }
-  
-  .letter-row {
-    font-size: 15px;
-    color: black;
-    display: flex;
-  }
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.letter-box {
+  border: 3px solid #d9d9d9;
+  background-color: #d9d9d9; 
+  border-radius: 6px;
+  margin: 3px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transition: background-color 0.3s, border 0.3s; /* Smooth transition for colors */
+}
+
+
+.filled-box {
+  border: 5px solid #d9d9d9; /* Adjusted to match letter-box border size */
+}
+
+
+.letter-row {
+  font-size: 15px;
+  color: black;
+  display: flex;
+  justify-content: center; /* Center the letters in the row */
+  margin-bottom: 10px; /* Space between rows */
+}
+
+
+/* Green for correct letters in the right position */
+.green {
+  background-color: green;
+  color: white;
+}
+
+
+/* Yellow for correct letters in the wrong position */
+.yellow {
+  background-color: yellow;
+  color: black;
+}
+
+
+/* Grey for incorrect letters */
+.grey {
+  background-color: grey;
+  color: white;
+}
+
+
+
+
