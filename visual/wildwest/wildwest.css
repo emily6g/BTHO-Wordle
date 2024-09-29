@@ -8,6 +8,7 @@
 
 main {
   min-height: 100vh;
+  /*background-color: #620808;*/
   background-image: url("BTHO_WO.jpg");
   
 
@@ -55,21 +56,21 @@ main {
 }
 
 
-/* Green for correct letters in the right position */
+
 .green {
   background-color: green;
   color: white;
 }
 
 
-/* Yellow for correct letters in the wrong position */
+
 .yellow {
   background-color: yellow;
   color: black;
 }
 
 
-/* Grey for incorrect letters */
+
 .grey {
   background-color: grey;
   color: white;
