@@ -39,7 +39,7 @@ document.addEventListener('keyup', (e)=>{
     }
     
     if (pressedKey === "Enter") {
-        checkGuess()
+        check2()
         return
     }
     
@@ -76,15 +76,121 @@ function deleteLetter(){
 
 function checkGuess(){
     let row = document.getElementsByClassName("letter-row")[6-guessesRemaining]
-    let guessStr = ''
+    let guessString = ''
     let rightGuess = Array.from(guessWord)
     for(const val of currentGuess){
-        guessStr += val
+        guessString += val
     }
-
-    if (guessStr.length != 5){
-        return
-    }
-
     
+    for(let i=0; i<5; i++){
+        let letterColor = ''
+        let box = row.children[i]
+        let letter = currentGuess[i]
+        let letterPosition = rightGuess.indexOf(currentGuess[i])
+    
+        if(letterPosition === -1){
+            letterColor = "#FF8DC"
+        } else {
+            if(currentGuess[i] === rightGuess[i]){
+                letterColor = '#7FFF00'
+            } else{
+                letterColor = '#FFD700'
+            }
+            rightGuess[letterPosition] = "#"
+        }
+    
+        let delay = 250 * i
+        setTimeout(()=> {
+            box.style.border = letterColor
+            //shadeKeyBoard(letter,letterColor)
+        }, delay)
+    }
+    
+    if(guessString === guessWord){
+        alert("You guessed right! Game over!")
+        guessesRemaining = 0
+        return
+    } else {
+        guessesRemaining -= 1
+        currentGuess = []
+        nextLetter = 0
+        if(guessesRemaining === 0){
+            alert("You've run out of guesses! Game over!")
+            alert(`The right word was: "${guessWord}"`)
+        }
+    }
+}
+
+// function shadeKeyBoard(letter,color){
+//     for (const elem of document.getElementsByClassName("letter-box")){
+//         if(elem.textContent === letter){
+//         let oldColor = elem.style.backgroundColor
+//             if(oldColor === 'green'){
+//                 return
+//             }
+//         }
+//     }
+// }
+
+function check2(){
+    const fs = require('fs');
+
+    let found = "yes";
+
+while (found === 'yes') {
+    // Open the word list file
+    // const allText = fs.readFileSync("visual/tamuClassic.txt", "utf-8");
+    // const words = allText.split(/\s+/);
+    wordle = guessWord
+    alert("This is the random Wordle: " + wordle);
+
+    // Function to check for correct letter placement
+    function checkPlace(charG, charW, place) {
+        if (charG === charW) {
+            alert(`${place} letter: right letter, right place!`);
+        }
+    }
+
+    // User's first guess
+    let guess = prompt("Enter a word: ");
+    
+    // Forces the user to enter ONLY a five-letter word
+    while (guess.length !== 5) {
+        alert("That was not a five-letter word!");
+        guess = prompt("Enter a word: ");
+    }
+
+    // Loop for a total of six guesses
+    for (let i = 0; i < 6; i++) {
+        // Checks if the Wordle has been guessed
+        if (guess === wordle) {
+            alert("You guessed it!");
+            break;
+        }
+        
+        // Check each letter's placement and correctness
+        for (let index = 0; index < 5; index++) {
+            checkPlace(guess[index], wordle[index], ["First", "Second", "Third", "Fourth", "Fifth"][index]);
+            if (guess[index] !== wordle[index]) {
+                if (wordle.includes(guess[index])) {
+                    alert(`${['First', 'Second', 'Third', 'Fourth', 'Fifth'][index]} letter: right letter, wrong place.`);
+                }
+            }
+        }
+
+        // Prompts user to keep guessing
+        guess = prompt("Enter a word: ");
+        while (guess.length !== 5) {
+            alert("That was not a five-letter word!");
+            guess = prompt("Enter a word: ");
+        }
+    }
+
+    if (guess !== wordle) {
+        alert("You have used up your guesses. The Wordle was " + wordle + ".");
+        alert("Try again next time!");
+    }
+
+    found = 'no';
+}
 }
