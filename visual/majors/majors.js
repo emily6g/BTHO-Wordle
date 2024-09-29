@@ -1,5 +1,5 @@
 words = [
-    "ACCT", "AERO", "AGLS", "AGSC", "ANSC", "ARCH", "ARSC", "ARTS", "ASTR", "BAEN", "BESC", "BICH", 
+    "AERO", "AGLS", "AGSC", "ANSC", "ARCH", "ARSC", "ARTS", "ASTR", "BAEN", "BESC", "BICH", 
     "BIMS", "BIOL", "BMEN", "BUSN", "CARC", "CHEM", "CHEN", "CHIN", "CLEN", "COMM", "COSC", "CSCE", 
     "CVEN", "CYBR", "DAEN", "DCED", "DDHS", "ECCB", "ECDE", "ECEN", "ECMT", "ECON", "EHRD", "ENDG", 
     "ENDS", "ENGL", "ENGR", "ENST", "ENTC", "ENTO", "EPFB", "EPSY", "ESET", "EURO", "EVEN", "FILM", 
