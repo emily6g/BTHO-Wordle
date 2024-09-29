@@ -70,8 +70,8 @@ main {
 }
 
 #to-page {
-
   border: 1px solid lightgray;
+  padding-top: 100px;
   padding: 12px;
   font-size: 30px;
   color:white
