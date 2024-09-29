@@ -1,6 +1,7 @@
 #tamuTitle {
+  /* text-shadow: 0 0 12px #000000; */
   font-size: 50px;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-top: 5vh;
 }
 
@@ -9,6 +10,7 @@ main {
   background-color: #620808;
   display: grid;
   place-items: center;
+  background-image: url("zebra.png");
 }
 
 #gameboard {
@@ -19,7 +21,7 @@ main {
 }
 
 .letter-box {
-  border: 3px solid #d9d9d9;
+  /* border: 3px solid #000000; */
   background-color: #d9d9d9; 
   border-radius: 6px;
   margin: 3px;
@@ -70,9 +72,6 @@ main {
 }
 
 #to-page {
-
-  border: 1px solid lightgray;
-  padding: 12px;
   font-size: 30px;
   color: #620808;
   border-width:4px;background-color:white;padding-right:18px;padding-left:18px;
