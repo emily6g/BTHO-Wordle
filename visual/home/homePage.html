@@ -37,7 +37,7 @@
 
 <body>
     <main>
-        <audio autoplay loop>
+        <audio id="backgroundMusic" loop>
             <source src="/visual/WarHymn.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
@@ -46,7 +46,16 @@
         <a id="to-intro" href="/visual/home/instructions.html">INSTRUCTIONS</a>
         <img src="sparkle.jpg" alt="sparkle" class="sparkle">
         <img src="sparkle.jpg" alt="sparkle2" class="sparkle2">
+        <button id="startAudio">Start Music</button>
     </main>
+
+    <script>
+        document.getElementById("startAudio").addEventListener("click", function() {
+            const audio = document.getElementById("backgroundMusic");
+            audio.play();
+        });
+    </script>
+
 </body>
 
 </html>
