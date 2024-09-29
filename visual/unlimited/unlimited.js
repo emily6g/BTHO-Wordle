@@ -145,13 +145,42 @@ function closeCustomAlert() {
     var alertModal = document.getElementById("customAlert");
     alertModal.style.display = "none";
 
-    confetti({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 }
-      });
+    var count = 200;
+    var defaults = {
+        origin: { y: 0.7 }
+    };
 
-  }
+    function fire(particleRatio, opts) {
+        confetti({
+        ...defaults,
+        ...opts,
+        particleCount: Math.floor(count * particleRatio)
+        });
+    }
+
+    fire(0.25, {
+        spread: 26,
+        startVelocity: 55,
+    });
+    fire(0.2, {
+        spread: 60,
+    });
+    fire(0.35, {
+        spread: 100,
+        decay: 0.91,
+        scalar: 0.8
+    });
+    fire(0.1, {
+        spread: 120,
+        startVelocity: 25,
+        decay: 0.92,
+        scalar: 1.2
+    });
+    fire(0.1, {
+        spread: 120,
+        startVelocity: 45,
+    });
+}
 
   function showCustomAlert2() {
     var alertModal = document.getElementById("customAlert2");
@@ -161,6 +190,43 @@ function closeCustomAlert() {
 function closeCustomAlert2() {
     var alertModal = document.getElementById("customAlert2");
     alertModal.style.display = "none";
+
+    var scalar = 2;
+    var unicorn = confetti.shapeFromText({ text: '🐍', scalar });
+
+    var defaults = {
+        spread: 360,
+        ticks: 60,
+        gravity: 0,
+        decay: 0.96,
+        startVelocity: 20,
+        shapes: [unicorn],
+        scalar
+    };
+
+    function shoot() {
+        confetti({
+        ...defaults,
+        particleCount: 30
+    });
+
+    confetti({
+        ...defaults,
+        particleCount: 5,
+        flat: true
+    });
+
+    confetti({
+        ...defaults,
+        particleCount: 15,
+        scalar: scalar / 2,
+        shapes: ['circle']
+    });
+    }
+
+    setTimeout(shoot, 0);
+    setTimeout(shoot, 100);
+    setTimeout(shoot, 200);
   }
   
   
