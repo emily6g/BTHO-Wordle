@@ -119,7 +119,10 @@ function checkGuess() {
 
 
     if (guessString === guessWord) {
-        alert("You BTHO WORDLE!! Congrats!");
+        // alert("You BTHO WORDLE!! Congrats!");
+        showCustomAlert();
+        
+        closeCustomAlert();
         guessesRemaining = 0;
         return;
     } else {
@@ -129,34 +132,7 @@ function checkGuess() {
 
 
         if (guessesRemaining === 0) {
-            alert(`You've run out of guesses! The correct word was: "${guessWord} CLICK: GO BACK to play again"`);
+            alert(`You've run out of guesses! The correct word was: "${guessWord}" CLICK: GO BACK to play again`);
         }
     }
-}
-
-function createConfetti() {
-    const confettiContainer = document.getElementById("confetti");
-    const colors = ["#ff0", "#0f0", "#f00", "#00f", "#ff00", "#ff8800"];
-    const numberOfPieces = 100; // Number of confetti pieces
-
-    for (let i = 0; i < numberOfPieces; i++) {
-        const confettiPiece = document.createElement("div");
-        confettiPiece.classList.add("confetti-piece");
-        confettiPiece.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-        confettiPiece.style.left = Math.random() * 100 + "vw"; // Random horizontal position
-        confettiPiece.style.animationDuration = (Math.random() * 2 + 2) + "s"; // Random fall duration
-        confettiPiece.style.transform = `rotate(${Math.random() * 360}deg)`; // Random rotation
-
-        confettiContainer.appendChild(confettiPiece);
-
-        // Remove confetti piece after animation ends
-        confettiPiece.addEventListener("animationend", () => {
-            confettiContainer.removeChild(confettiPiece);
-        });
-    }
-}
-
-function userWins() {
-    alert("You guessed right! Game over!");
-    createConfetti();
 }
